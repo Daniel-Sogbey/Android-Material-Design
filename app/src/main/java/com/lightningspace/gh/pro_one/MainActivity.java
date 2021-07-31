@@ -1,17 +1,15 @@
-package com.lightningspace.gh.pro_one;
+ package com.lightningspace.gh.pro_one;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
 
 import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
     private MaterialToolbar toolbar;
+    private FloatingActionButton floatingActionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         toolbar = findViewById(R.id.topAppBar);
+        floatingActionButton = findViewById(R.id.floatingActionButton);
 
         toolbar.setNavigationOnClickListener(view -> {
             Snackbar snackbar = Snackbar.make(toolbar,"Menu Tabbed",Snackbar.LENGTH_SHORT);
@@ -42,5 +41,11 @@ public class MainActivity extends AppCompatActivity {
             }
             return false;
         });
+
+        floatingActionButton.setOnClickListener(view -> {
+            Snackbar snackbar = Snackbar.make(toolbar,"FAB Tabbed",Snackbar.LENGTH_SHORT);
+            snackbar.show();
+        });
+
     }
 }

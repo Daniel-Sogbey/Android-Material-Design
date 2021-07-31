@@ -7,4 +7,5 @@
     <string name="search">search</string>
     <string name="content_description_more">more icon</string>
     <string name="more">more</string>
+    <string name="floatingActionButton">Floating action button</string>
 </resources>
