@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pro-One</string>
+    <string name="title">Pro-One</string>
+    <string name="content_description_favorite">favorite icon</string>
+    <string name="favorite">favorite</string>
+    <string name="content_description_search">search icon</string>
+    <string name="search">search</string>
+    <string name="content_description_more">more icon</string>
+    <string name="more">more</string>
+</resources>
