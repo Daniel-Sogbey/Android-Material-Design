@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/popular"
+        android:title="@string/popular_icon"
+        app:iconTint="@color/textColor"
+        android:icon="@drawable/ic_baseline_bar_chart_24"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/premier"
+        android:title="@string/premier_icon"
+        app:iconTint="@color/textColor"
+        android:icon="@drawable/ic_baseline_credit_card_24"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/live"
+        android:title="@string/live_icon"
+        app:iconTint="@color/textColor"
+        android:icon="@drawable/ic_baseline_live_tv_24"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/newIcon"
+        android:title="@string/new_icon"
+        app:iconTint="@color/textColor"
+        android:icon="@drawable/ic_baseline_new_releases_24"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/watched"
+        android:title="@string/watched_icon"
+        app:iconTint="@color/textColor"
+        android:icon="@drawable/ic_baseline_watch_later_24"
+        android:enabled="true"
+        />
+
+</menu>

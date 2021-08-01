@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/popular"
+        android:title="@string/popular_icon"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/watched"
+        android:title="@string/watched_icon"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/live"
+        android:title="@string/live_icon"
+        android:icon="@drawable/ic_baseline_video_call_24"
+        android:iconTint="@color/textColor"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/premier"
+        android:title="@string/premier_icon"
+        android:enabled="true"
+        />
+
+    <item
+        android:id="@+id/newIcon"
+        android:title="@string/new_icon"
+        android:icon="@drawable/ic_baseline_new_releases_24"
+        android:enabled="true"
+        />
+
+</menu>
