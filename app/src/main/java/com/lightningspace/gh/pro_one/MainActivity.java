@@ -1,7 +1,8 @@
  package com.lightningspace.gh.pro_one;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.os.Bundle;
 
@@ -11,10 +12,10 @@ import com.google.android.material.button.MaterialButton;
 import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
-import android.view.Window;
 
  public class MainActivity extends AppCompatActivity {
     private MaterialToolbar toolbar;
+    private DrawerLayout drawerLayout;
 
 
      @Override
@@ -28,6 +29,8 @@ import android.view.Window;
         toolbar.setNavigationOnClickListener(view -> {
             Snackbar snackbar = Snackbar.make(toolbar,"Menu Tabbed",Snackbar.LENGTH_SHORT);
             snackbar.show();
+           drawerLayout = findViewById(R.id.drawerLayout);
+            drawerLayout.openDrawer(GravityCompat.START);
         });
 
         toolbar.setOnMenuItemClickListener(item -> {

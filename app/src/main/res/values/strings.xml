@@ -20,4 +20,9 @@
     <string name="watched_icon">Watched</string>
     <string name="popular_icon">Popular</string>
     <string name="new_icon">New</string>
+    <string name="recently_viewed">Recently Viewed</string>
+    <string name="deleted">Deleted</string>
+    <string name="archive">Archive</string>
+    <string name="trending">Trending</string>
+    <string name="downloaded">Downloaded</string>
 </resources>
