@@ -8,4 +8,10 @@
     <string name="content_description_more">more icon</string>
     <string name="more">more</string>
     <string name="floatingActionButton">Floating action button</string>
+    <string name="card_title">The Matrix</string>
+    <string name="matrix_image">Matrix Image</string>
+    <string name="description">The Matrix Movie. Produced in the year 1998 and released in 8th July, 2000.</string>
+    <string name="download_now">Download Now</string>
+    <string name="size_1gb">size: 1GB</string>
+    <string name="share_icon">Share icon</string>
 </resources>

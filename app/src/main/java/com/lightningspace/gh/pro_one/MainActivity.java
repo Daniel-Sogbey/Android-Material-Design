@@ -4,20 +4,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
     private MaterialToolbar toolbar;
-    private FloatingActionButton floatingActionButton;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         toolbar = findViewById(R.id.topAppBar);
-        floatingActionButton = findViewById(R.id.floatingActionButton);
+        FloatingActionButton floatingActionButton = findViewById(R.id.floatingActionButton);
 
         toolbar.setNavigationOnClickListener(view -> {
             Snackbar snackbar = Snackbar.make(toolbar,"Menu Tabbed",Snackbar.LENGTH_SHORT);
@@ -42,8 +42,26 @@ public class MainActivity extends AppCompatActivity {
             return false;
         });
 
+        MaterialCardView card = findViewById(R.id.card);
+        card.setOnClickListener(view ->{
+                Snackbar snackbar = Snackbar.make(card,"Card Tabbed",Snackbar.LENGTH_SHORT);
+                snackbar.show();
+        });
+
+        MaterialButton download = findViewById(R.id.downloadBtn);
+        download.setOnClickListener(view -> {
+            Snackbar snackbar = Snackbar.make(download,"Download Button Tabbed",Snackbar.LENGTH_SHORT);
+            snackbar.show();
+        });
+
+        MaterialButton share = findViewById(R.id.shareIcon);
+        share.setOnClickListener(view -> {
+            Snackbar snackbar = Snackbar.make(share,"Share Icon Tabbed",Snackbar.LENGTH_SHORT);
+            snackbar.show();
+        });
+
         floatingActionButton.setOnClickListener(view -> {
-            Snackbar snackbar = Snackbar.make(toolbar,"FAB Tabbed",Snackbar.LENGTH_SHORT);
+            Snackbar snackbar = Snackbar.make(floatingActionButton,"FAB Tabbed",Snackbar.LENGTH_SHORT);
             snackbar.show();
         });
 
